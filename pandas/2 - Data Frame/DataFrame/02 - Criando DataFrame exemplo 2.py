@@ -22,10 +22,10 @@ print(notaAlunos_DataFrame)
 
 
 
-notaAlunos_DataFrame.to_json(path_or_buf="D:\\curso\\pandas\\pandas\\2 - Data Frame\\DataFrame\\arq.json", orient=None, date_format=None, double_precision=10, force_ascii=True, date_unit='ms', default_handler=None, lines=False, compression='infer', index=True, indent=None, storage_options=None, mode='w', )
+notaAlunos_DataFrame.to_json(path_or_buf="D:\\curso\\pandas\\pandas\\2 - Data Frame\\DataFrame\\arq2.json", orient=None, date_format=None, double_precision=10, force_ascii=True, date_unit='ms', default_handler=None, lines=False, compression='infer', index=True, indent=None, storage_options=None, mode='w', )
 
 
-caminho = "D:\\curso\\pandas\\pandas\\2 - Data Frame\\DataFrame\\arq.json"
+caminho = "D:\\curso\\pandas\\pandas\\2 - Data Frame\\DataFrame\\arq2.json"
 with open(caminho, encoding='utf-8') as meu_json:
     dados = json.load(meu_json)
 print(dados) 
