@@ -32,7 +32,10 @@ notasAlunos_DF["Nota4"] = novasFaltas
 notasAlunos_DF["Média"]=(notasAlunos_DF["Nota1"]+ notasAlunos_DF["Nota2"]+notasAlunos_DF["Nota3"]+notasAlunos_DF["Nota4"]) / 4
 print("\n---------DATA FRAME NOTAS ALUNOS NOVAS NOTAS---------")
 print(notasAlunos_DF)
+print("\n---------DATA FRAME NOTAS ALUNOS NOVAS nota 2---------")
+notasAlunos_DF.loc[1,"Nota2"] = 1
 
-
+notasAlunos_DF["Média"]=(notasAlunos_DF["Nota1"]+ notasAlunos_DF["Nota2"]+notasAlunos_DF["Nota3"]+notasAlunos_DF["Nota4"]) / 4
+print(notasAlunos_DF)
 
 notasAlunos_DF.to_json(path_or_buf="D:\\curso\\pandas\\pandas\\2 - Data Frame\\DataFrame\\arq2.json", orient=None, date_format=None, double_precision=10, force_ascii=True, date_unit='ms', default_handler=str, lines=False, compression='infer', index=True, indent=None, storage_options=None, mode='w', )
